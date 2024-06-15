@@ -1,0 +1,220 @@
+.background-pane {
+    -fx-background-image: url("img/musicbackground.png");
+    -fx-background-size: cover;
+    -fx-padding: 20;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+}
+
+/* style.css */
+.empty-list-message {
+    -fx-font-size: 18px; /* Adjust font size as needed */
+    -fx-font-weight: bold;
+    -fx-text-fill: red; /* Change text color */
+    -fx-background-color: lightyellow; /* Change background color */
+    -fx-pref-width: 300px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-wrap-text: true; /* Allow text wrapping */
+    -fx-padding: 10px;
+}
+
+
+.image-button {
+    -fx-background-image: url("img/PlayButtonRound.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-radius: 50%; /* Makes the button circular */
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.image-button:hover {
+    -fx-opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.image-button:pressed {
+    -fx-opacity: 0.6; /* More transparent on press */
+}
+
+.image-button-pressed {
+    -fx-background-image: url("img/PauseButtonRound.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-radius: 50%; /* Makes the button circular */
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.return-button {
+    -fx-background-image: url("img/ReturnButton.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 30%; /* Makes the button circular */
+    -fx-background-radius: 30%; /* Makes the button circular */
+    -fx-pref-width: 50px; /* Set preferred width */
+    -fx-pref-height: 50px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.addsong-button {
+    -fx-background-image: url("img/AddSongButton.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-radius: 50%; /* Makes the button circular */
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.image-button-pressed:hover, .image-button-prev:hover, .image-button-next:hover, .addsong-button:hover , .return-button:hover{
+    -fx-opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.image-button-pressed:pressed, .image-button-prev:pressed, .image-button-next:pressed, .addsong-button:pressed, return-button:pressed{
+    -fx-opacity: 0.6; /* More transparent on press */
+}
+
+.image-button-prev {
+    -fx-background-image: url("img/PrevButton.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-radius: 50%; /* Makes the button circular */
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.image-button-next {
+    -fx-background-image: url("img/NextButton.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: transparent; /* Hide button text */
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-radius: 50%; /* Makes the button circular */
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 100px; /* Set preferred height */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+/* Slider styles */
+/* style.css */
+
+/* Track */
+.slider .track {
+    -fx-background-color: #ddd;
+}
+
+.slider .thumb {
+    -fx-background-color: #007bff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8px; /* Adjust the radius as needed */
+    -fx-padding: 8px; /* Adjust the padding to make the thumb thicker */
+}
+
+
+/* Tick Marks (Optional) */
+.slider .tick-mark {
+    -fx-background-color: #aaa;
+    -fx-pref-width: 2px;
+}
+
+
+/* GridPane styles */
+.grid-pane {
+    -fx-padding: 20;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+}
+
+/* style.css */
+
+/* General button style */
+.list-button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0.5, 0, 1);
+
+
+/* Style for list button with gradient background */
+
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    -fx-text-fill: white;
+    -fx-border-color: #3e4eaf; /* Darker blue border */
+}
+
+.list-button:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #5b0eaa, #2061d3); /* Slightly darker gradient on hover */
+}
+
+/* Optional: Specific button size adjustments */
+.small-button {
+    -fx-font-size: 12px;
+    -fx-padding: 8px 16px;
+}
+
+.large-button {
+    -fx-font-size: 16px;
+    -fx-padding: 12px 24px;
+}
+/* style.css */
+
+/* Style for media progress slider */
+.media-progress-slider {
+    -fx-padding: 10px 0;
+    -fx-background-color: transparent;
+}
+
+.media-progress-slider .track {
+    -fx-background-color: #cccccc;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px;
+}
+
+.media-progress-slider .thumb {
+    -fx-background-color: #7b03bc;/* Change this to your preferred color */
+      -fx-shape: "M20,0 L80,0 C90,0 100,10 100,20 L100,80 C100,90 90,100 80,100 L20,100 C10,100 0,90 0,80 L0,20 C0,10 10,0 20,0 Z";
+    -fx-min-width: 50px; /* Adjust as needed */
+    -fx-min-height: 50px; /* Adjust as needed */
+    -fx-max-width: 50px; /* Adjust as needed */
+    -fx-max-height: 50px; /* Adjust as needed */
+    -fx-padding: 10; /* Adjust as needed */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+
+.media-progress-slider .increment-button, .media-progress-slider .decrement-button {
+    -fx-background-color: transparent;
+}
+
